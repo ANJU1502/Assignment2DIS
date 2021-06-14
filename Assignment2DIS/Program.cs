@@ -11,15 +11,41 @@ namespace Assignment2DIS
             {
                 //Question1:
                 Console.WriteLine("Question 1");
-                int[] num1 = { 1, 2, 2, 1 };
-                int[] num2 = { 2, 2 };
+                Console.WriteLine(" Enter number of elements :\n");
+                int n = Convert.ToInt32(Console.ReadLine());
+            
+                Console.WriteLine(" Input  elements in the 1st array :\n");
+                int[] num1 = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                Console.Write("element - {0} : ", i);
+                num1[i] = Convert.ToInt32(Console.ReadLine());
+                }
+                 Console.WriteLine(" Enter number of elements :\n");
+                 int nn = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(" Input  elements in the 2nd array :\n");
+                int[] num2 = new int[nn];
+                for (int i = 0; i < nn; i++)
+                {
+                Console.Write("element - {0} : ", i);
+                num2[i] = Convert.ToInt32(Console.ReadLine());
+                }
                 Join(num1, num2);
                 Console.WriteLine("");
                 Console.ReadLine();
 
                 //Question 2 
                 Console.WriteLine("Question 2");
-                int[] nums = { 1, 3, 5, 6 };
+                Console.WriteLine(" Enter number of elements :\n");
+                int p = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(" Input  elements in the 1st array :\n");
+                int[] nums = new int[p];
+                for (int i = 0; i < p; i++)
+                {
+                Console.Write("element - {0} : ", i);
+                nums[i] = Convert.ToInt32(Console.ReadLine());
+                }
                 Console.WriteLine("target number:");
                 
                 int target = Int32.Parse(Console.ReadLine());
@@ -29,7 +55,16 @@ namespace Assignment2DIS
 
                 //Question3
                 Console.WriteLine("Question 3");
-                int[] arp = { 2, 2, 3, 4 };
+            Console.WriteLine(" Enter number of elements :\n");
+            int zp = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(" Input  elements in the 1st array :\n");
+                int[] arp = new int[zp];
+                for (int i = 0; i < zp; i++)
+                {
+                Console.Write("element - {0} : ", i);
+                arp[i] = Convert.ToInt32(Console.ReadLine());
+                }
                 int lucky = Lucky(arp);
                 if (lucky == -1)
                     Console.WriteLine("No Lucky number");
@@ -61,7 +96,16 @@ namespace Assignment2DIS
 
                 //Question 6
                 Console.WriteLine("Question 6");
-                int[] Nums = { 2, 7, 11, 15 };
+            Console.WriteLine(" Enter number of elements :\n");
+            int ppp = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(" Input  elements in the 1st array :\n");
+                int[] Nums = new int[ppp];
+                for (int i = 0; i < ppp; i++)
+                {
+                Console.Write("element - {0} : ", i);
+                Nums[i] = Convert.ToInt32(Console.ReadLine());
+             }
                 int target_sum = 9;
                 TargetAddition(Nums, target_sum);
                 Console.WriteLine();
@@ -74,23 +118,50 @@ namespace Assignment2DIS
 
                 //Question 8
                 Console.WriteLine("Question 8");
-                int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-                int K = 3;
+            Console.WriteLine(" Enter number of elements :\n");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(" Input  elements in the 1st array :\n");
+            int[] arr = new int[x];
+            for (int i = 0; i < x; i++)
+            {
+                Console.Write("element - {0} : ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int K = 3;
                 RotateArray(arr, K);
 
                 Console.WriteLine();
 
                 //Question 9
                 Console.WriteLine("Question 9");
-                int[] array = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
-                int sum = LargestSum(array);
+            Console.WriteLine(" Enter number of elements :\n");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(" Input  elements in the 1st array :\n");
+            int[] array = new int[y];
+            for (int i = 0; i < y; i++)
+            {
+                Console.Write("element - {0} : ", i);
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int sum = LargestSum(array);
                 Console.WriteLine("largest sum is {0}", sum);
                 Console.WriteLine();
 
                 //Question 10
                 Console.WriteLine("Question 10");
-                int[] costs = { 10, 15, 20 };
-                int minimum = MinCostToReach(costs);
+            Console.WriteLine(" Enter number of elements :\n");
+            int w = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(" Input  elements in the 1st array :\n");
+            int[] costs = new int[w];
+            for (int i = 0; i < w; i++)
+            {
+                Console.Write("element - {0} : ", i);
+                costs[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int minimum = MinCostToReach(costs);
                 Console.WriteLine("Minimum cost to reach  {0}", minimum);
                 Console.WriteLine();
             }
